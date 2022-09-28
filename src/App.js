@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Employee from './components/employee';
 import {useState} from 'react';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {showEmployees ? 
-        <>
+        <p>
           <input 
             type='text' 
             onChange={(e) => {
@@ -18,10 +18,7 @@ function App() {
           />
           <Employee name ="Caleb" role="Intern"/>
           <Employee name ="Abby" role={role}/>
-          <Employee name ="Jeni"/>
-          <Employee name ="John"/>
-          <Employee name ="Art"/>
-        </>
+        </p>
       :
         <p>You cannot see the employees</p>
       }
